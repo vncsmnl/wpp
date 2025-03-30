@@ -28,10 +28,25 @@ label {
     margin-bottom: 10px;
 }
 
-input {
-    width: calc(100% - 20px);
-    padding: 10px;
+.input-group {
+    display: flex;
+    gap: 10px;
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.country-select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 15px;

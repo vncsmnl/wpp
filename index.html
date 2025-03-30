@@ -14,8 +14,29 @@
 <body>
     <div class="container">
         <h1>Mandar mensagem sem salvar o número do WhatsApp</h1>
-        <label for="telefone">Número de Telefone:</label>
-        <input type="text" inputmode="tel" id="telefone" placeholder="Digite o número com DDD">
+        <div class="input-group">
+            <select id="countryCode" class="country-select">
+                <option value="55">🇧🇷 +55 (Brasil)</option>
+                <option value="1">🇺🇸 +1 (EUA)</option>
+                <option value="44">🇬🇧 +44 (UK)</option>
+                <option value="33">🇫🇷 +33 (França)</option>
+                <option value="49">🇩🇪 +49 (Alemanha)</option>
+                <option value="34">🇪🇸 +34 (Espanha)</option>
+                <option value="39">🇮🇹 +39 (Itália)</option>
+                <option value="351">🇵🇹 +351 (Portugal)</option>
+                <option value="54">🇦🇷 +54 (Argentina)</option>
+                <option value="56">🇨🇱 +56 (Chile)</option>
+                <option value="57">🇨🇴 +57 (Colômbia)</option>
+                <option value="52">🇲🇽 +52 (México)</option>
+                <option value="51">🇵🇪 +51 (Peru)</option>
+                <option value="58">🇻🇪 +58 (Venezuela)</option>
+                <option value="591">🇧🇴 +591 (Bolívia)</option>
+                <option value="593">🇪🇨 +593 (Equador)</option>
+                <option value="595">🇵🇾 +595 (Paraguai)</option>
+                <option value="598">🇺🇾 +598 (Uruguai)</option>
+            </select>
+            <input type="text" inputmode="tel" id="telefone" placeholder="Digite o número com DDD">
+        </div>
         <button onclick="redirecionar()">Abrir Chat</button>
     </div>
     <script src="script.js"></script>
